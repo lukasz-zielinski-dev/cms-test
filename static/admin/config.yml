@@ -10,9 +10,9 @@ collections:
     label: "Blog"
     folder: "content/blog"
     create: true
-    slug: "index"
-    media_folder: ""
-    public_folder: ""
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: "static/img/{{slug}}"
+    public_folder: "/img/{{slug}}"
     path: "{{title}}/index"
     editor:
       preview: false
